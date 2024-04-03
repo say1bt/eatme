@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #2e3333;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 64px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.logo img {
+  width: 121px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 650px;
+}
+
+.search-bar input {
+  appearance: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  caret-color: #00ccbc;
+  border: 1px solid #e8ebeb;
+  border-radius: 4px;
+  opacity: 1;
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  height: 46px;
+  width: 100%;
+  background: #0000000a;
+  padding: 12px 16px 12px 40px;
+}
+
+.search-icon {
+  margin-left: 8px;
+  color: #abadad;
+  position: absolute;
+  left: 0px;
+}
+
+.chart-btn {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.signup-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #d1d4d4;
+  gap: 6px;
+  color: #2e3333;
+}
+
+.account-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #d1d4d4;
+  gap: 6px;
+  margin-left: 8px;
+  color: #2e3333;
+}
+
+.account-btn svg,
+.signup-btn svg {
+  color: #00ccbc;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-left: 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button-label {
+  margin-left: 4px;
+}
+
+.cart-value {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.signin-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signin-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin-btn.facebook {
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #4c69ba;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.signin-btn.google {
+  background-color: #ffffff;
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border-color: rgb(139, 134, 134);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.signin-btn.apple {
+  background-color: #000;
+  color: #fff;
+  transition-property: box-shadow;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.signin-btn.email {
+  background-color: #ccc;
+  color: #333;
+}
+
+.separator {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #999;
+}
+
+.terms {
+  font-size: 14px;
+  color: #666;
+}
+
+.terms a {
+  color: #000;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.not-found-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+}
+
+.error-icon {
+  margin-right: 10px;
+}
+
+.text-arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  /* flex-grow: 1; */
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.menu-header {
+  // position: relative;
+}
+
+///////////////////////////    MEALS STYLES      /////////////////////////////
+
+.meals-navbar {
+  // position: absolute;
+  margin-top: 40px;
+  height: 50px;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.meals-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.meals-navbar li {
+  color: #00b8a9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.meals-navbar li.active {
+  font-weight: bold;
+}
+
+.meals-navbar li:hover {
+  color: #008c7e;
+}
+
+///////////////////////////    CARD STYLES      /////////////////////////////
+
+.card-image {
+  width: 100%;
+  height: 50;
+  // object-fit: cover;
+}
+
+.card-content {
+  margin-top: 0px;
+  padding: 8px;
+}
+
+.card-name {
+  margin-top: 0;
+}
+
+.card-details {
+  margin-top: 0;
+}
+
+.card-price {
+  margin-top: 0;
+}
+
+.add-button {
+  margin-top: 0px;
+  width: 100%;
+  padding: 6px;
+  background-color: #00b8a9;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #008e7a;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  /* Display cards horizontally */
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  gap: 10px;
+  /* Add some gap between cards */
+  padding: 20px;
+  /* Add padding for better appearance */
+  background-color: gray;
+}
+
+.scroll-icons {
+  position: relative;
+}
+
+.scroll-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.scroll-icon.left {
+  left: 0;
+}
+
+.scroll-icon.right {
+  right: 0;
+}
+
+.footer-container {
+  background-color: rgb(46, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.footer-section {
+  background-color: rgb(67, 72, 72);
+  padding: 10px;
+  flex: 1;
+  height: 500px;
+  margin: 0 10px; /* Adjust the margin for spacing between sections */
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .mealsNavbar {
+    li {
+      @apply rounded-full;
+
+      &.active {
+        @apply bg-[#00b8a9] text-white font-bold;
+      }
+    }
+  }
+}
